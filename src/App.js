@@ -9,6 +9,9 @@ import Products from './Pages/Products/Products';
 import Product from './Pages/Product/Product';
 import Navbar from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
+import Category from './Components/Category/Category';
+import Featured from './Components/Featured/Featured';
+import Trending from './Components/Trending/Trending';
 
 function App() {
   const Layout = () => {
@@ -37,8 +40,20 @@ function App() {
         { 
           path: '/product/:id',
           element: <Product />
+        },
+        {
+          path: '/category',
+          element: <Category />,
+        },
+        {
+          path: '/featured',
+          element: <Featured />,
+        },
+        {
+          path: '/trending',
+          element: <Trending />,
         }
-      ]
+      ],
     },
   ]);
   return (

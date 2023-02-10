@@ -2,6 +2,7 @@ import React from 'react'
 import {CarouselItem, Carousel} from '../../Components/Carousel/Carousel';
 import Featured from '../../Components/Featured/Featured';
 import Category from '../../Components/Category/Category';
+import Trending from '../../Components/Trending/Trending';
 const img = [
   {
     id: 1,
@@ -27,12 +28,13 @@ const Home = () => {
       <Carousel>
         {img.map((item) => (
           <CarouselItem key={item.id}>
-            <img src={item.link} alt="img" />
+            <img src={item.link} alt="img" style={{width: "100vw", objectFit: "cover", height: "100%"}} />
           </CarouselItem>
         ))}
       </Carousel>
       <Featured />
       <Category />
+      <Trending/>
     </div>
   )
 }

@@ -4,14 +4,14 @@ const Footer = () => {
   return (
     
     <footer class="bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100">
-  <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
-      <div>
-      <img src="#" class="mr-5 h-6 sm:h-9" alt="swiss" />
-        <p class="max-w-xs mt-4 text-sm text-gray-600">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, accusantium.
-        </p>
-        <div class="flex mt-8 space-x-6 text-gray-600">
+      <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+          <div>
+            <p class="mr-5 h-6 sm:h-9">Swissfit Collection </p>
+            <p class="max-w-xs mt-4 text-sm text-gray-600">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, accusantium.
+            </p>
+          <div class="flex mt-8 space-x-6 text-gray-600">
           <a class="hover:opacity-75" href target="_blank" rel="noreferrer">
             <span class="sr-only"> Facebook </span>
             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -43,35 +43,31 @@ const Footer = () => {
             </svg>
           </a>
         </div>
-      </div>
-      <div class="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
-        <div>
+          </div>
+          <div class="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
+          <div>
           <p class="font-medium">
-            Company
+            Category
           </p>
           <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-            <a class="hover:opacity-75" href> About </a>
-            <a class="hover:opacity-75" href> Meet the Team </a>
-            <a class="hover:opacity-75" href> History </a>
-            <a class="hover:opacity-75" href> Careers </a>
+            <a class="hover:opacity-75" href> Men </a>
+            <a class="hover:opacity-75" href> Women </a>
+            <a class="hover:opacity-75" href> Children </a>
+            <a class="hover:opacity-75" href> Accessories </a>
+          </nav>
+          </div>
+          <div>
+          <p class="font-medium"> Services </p>
+          <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+            <a class="hover:opacity-75" href> Shoes </a>
+            <a class="hover:opacity-75" href> Hats </a>
+            <a class="hover:opacity-75" href> Tye & Die </a>
+            <a class="hover:opacity-75" href> Stores </a>
+            <a class="hover:opacity-75" href> New Arrivals </a>
           </nav>
         </div>
         <div>
-          <p class="font-medium">
-            Services
-          </p>
-          <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-            <a class="hover:opacity-75" href> 1on1 Coaching </a>
-            <a class="hover:opacity-75" href> Company Review </a>
-            <a class="hover:opacity-75" href> Accounts Review </a>
-            <a class="hover:opacity-75" href> HR Consulting </a>
-            <a class="hover:opacity-75" href> SEO Optimisation </a>
-          </nav>
-        </div>
-        <div>
-          <p class="font-medium">
-            Helpful Links
-          </p>
+          <p class="font-medium"> Helpful Links </p>
           <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
             <a class="hover:opacity-75" href> Contact </a>
             <a class="hover:opacity-75" href> FAQs </a>
@@ -79,9 +75,7 @@ const Footer = () => {
           </nav>
         </div>
         <div>
-          <p class="font-medium">
-            Legal
-          </p>
+          <p class="font-medium"> Legal </p>
           <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
             <a class="hover:opacity-75" href> Privacy Policy </a>
             <a class="hover:opacity-75" href> Terms &amp; Conditions </a>
@@ -90,12 +84,18 @@ const Footer = () => {
           </nav>
         </div>
       </div>
-    </div>
-    <p class="mt-8 text-xs text-gray-800">
-      © 2022 SwissFit Collections
-    </p>
-  </div>
-</footer>
+        </div>
+        <div>
+          <i class="fa-brands fa-paypal text-xl text-gray-600"></i>
+          <i class="fa-brands fa-stripe text-xl text-gray-600 mx-3"></i>
+          <i class="fa-brands fa-cc-visa text-xl text-gray-600 mx-3"></i>
+          <i class="fa-brands fa-cc-mastercard text-xl text-gray-600 mx-3"></i>
+        </div>
+        <p class="mt-8 text-xs text-gray-800">
+          © 2022 SwissFit Collections
+        </p>
+      </div>
+    </footer>
   )
 }
 

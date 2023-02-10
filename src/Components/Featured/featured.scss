@@ -1,0 +1,46 @@
+.feature {
+  width: 80%;
+  margin: auto;
+}
+
+.card {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  span {
+    position: absolute;
+    top: 5;
+    left: 5;
+    background-color: white;
+    color: teal;
+    padding: 3px 5px;
+    z-index: 3;
+    font-weight: 500;
+    font-size: 12px;
+
+  }
+  .image {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    &:hover {
+      .second-img { 
+        z-index: 2;
+      }
+    }
+    img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     position: absolute;
+    }
+  .main-img {
+    z-index: 1;
+  }
+  .second-img {
+
+  }
+}
+}
